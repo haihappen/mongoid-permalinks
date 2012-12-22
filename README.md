@@ -7,8 +7,10 @@ Mongoid::Permalink adds a permalink based on your document `to_s` method.
 In your Gemfile:
 
 ```ruby
-gem 'mongoid-permalink'
+gem 'mongoid-permalink', github: 'haihappen/mongoid-permalink'
 ```
+
+You have to use the GitHub branch for now, because [http://rubygems.org/gems/mongoid-permalink](http://rubygems.org/gems/mongoid-permalink) is occupied at the moment. ([Help me to get the repo!](https://github.com/jgwmaxwell/mongoid-permalink/issues/1))
 
 ## Usage
 
