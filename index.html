@@ -19,30 +19,30 @@
       <header>
         <h1>mongoid-permalink</h1>
         <p>Permalinks for your Mongoid documents.</p>
-        <p class="view"><a href="https://github.com/haihappen/mongoid-permalink">View the Project on GitHub <small>haihappen/mongoid-permalink</small></a></p>
+        <p class="view"><a href="https://github.com/haihappen/mongoid-permalinks">View the Project on GitHub <small>haihappen/mongoid-permalinks</small></a></p>
         <ul>
-          <li><a href="https://github.com/haihappen/mongoid-permalink/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/haihappen/mongoid-permalink/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/haihappen/mongoid-permalink">View On <strong>GitHub</strong></a></li>
+          <li><a href="https://github.com/haihappen/mongoid-permalinks/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/haihappen/mongoid-permalinks/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/haihappen/mongoid-permalinks">View On <strong>GitHub</strong></a></li>
         </ul>
       </header>
       <section>
-        <h1>mongoid-permalink</h1>
+        <h1>mongoid-permalinks</h1>
 
-<p>Mongoid::Permalink adds a permalink based on your document <code>to_s</code> method.</p>
+<p>Mongoid::Permalinks adds a permalink based on your document <code>to_s</code> method.</p>
 
 <h2>Installation</h2>
 
 <p>In your Gemfile:</p>
 
-<div class="highlight"><pre><span class="n">gem</span> <span class="s1">'mongoid-permalink'</span>
+<div class="highlight"><pre><span class="n">gem</span> <span class="s1">'mongoid-permalinks'</span>
 </pre></div>
 
 <h2>Usage</h2>
 
 <div class="highlight"><pre><span class="k">class</span> <span class="nc">Document</span>
   <span class="kp">include</span> <span class="no">Mongoid</span><span class="o">::</span><span class="no">Document</span>
-  <span class="kp">include</span> <span class="no">Mongoid</span><span class="o">::</span><span class="no">Permalink</span>
+  <span class="kp">include</span> <span class="no">Mongoid</span><span class="o">::</span><span class="no">Permalinks</span>
 
   <span class="n">field</span> <span class="ss">:name</span><span class="p">,</span> <span class="n">type</span><span class="p">:</span> <span class="nb">String</span>
 
@@ -50,8 +50,8 @@
 <span class="k">end</span>
 </pre></div>
 
-<div class="highlight"><pre><span class="n">document</span> <span class="o">=</span> <span class="no">Document</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="nb">name</span><span class="p">:</span> <span class="s1">'Mongoid::Permalink is awesome'</span><span class="p">)</span>
-<span class="n">document</span><span class="o">.</span><span class="n">permalink</span> <span class="c1"># =&gt; 'mongoid-permalink-is-awesome'</span>
+<div class="highlight"><pre><span class="n">document</span> <span class="o">=</span> <span class="no">Document</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="nb">name</span><span class="p">:</span> <span class="s1">'Mongoid::Permalinks is awesome'</span><span class="p">)</span>
+<span class="n">document</span><span class="o">.</span><span class="n">permalink</span> <span class="c1"># =&gt; 'mongoid-permalinks-is-awesome'</span>
 </pre></div>
 
 <h2>Contributing</h2>
