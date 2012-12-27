@@ -2,7 +2,7 @@ require 'active_support'
 require 'mongoid'
 
 module Mongoid
-  module Permalink
+  module Permalinks
     extend ActiveSupport::Concern
 
     included do

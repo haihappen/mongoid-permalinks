@@ -1,23 +1,21 @@
-# mongoid-permalink
+# mongoid-permalinks
 
-Mongoid::Permalink adds a permalink based on your document `to_s` method.
+Mongoid::Permalinks adds a permalink based on your document `to_s` method.
 
 ## Installation
 
 In your Gemfile:
 
 ```ruby
-gem 'mongoid-permalink', github: 'haihappen/mongoid-permalink'
+gem 'mongoid-permalinks'
 ```
-
-You have to use the GitHub branch for now, because [http://rubygems.org/gems/mongoid-permalink](http://rubygems.org/gems/mongoid-permalink) is occupied at the moment. ([Help me to get the repo!](https://github.com/jgwmaxwell/mongoid-permalink/issues/1))
 
 ## Usage
 
 ```ruby
 class Document
   include Mongoid::Document
-  include Mongoid::Permalink
+  include Mongoid::Permalinks
   
   field :name, type: String
   
@@ -26,8 +24,8 @@ end
 ```
 
 ```ruby
-document = Document.create(name: 'Mongoid::Permalink is awesome')
-document.permalink # => 'mongoid-permalink-is-awesome'
+document = Document.create(name: 'Mongoid::Permalinks is awesome')
+document.permalink # => 'mongoid-permalinks-is-awesome'
 ```
 
 ## Contributing

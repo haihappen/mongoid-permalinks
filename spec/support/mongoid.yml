@@ -1,7 +1,7 @@
 test:
   sessions:
     default:
-      database: mongoid_permalink_test
+      database: mongoid_permalinks_test
       hosts:
         - localhost:27017
       options:

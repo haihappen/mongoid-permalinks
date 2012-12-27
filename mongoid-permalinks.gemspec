@@ -1,11 +1,11 @@
-require './lib/mongoid/permalink/version'
+require './lib/mongoid/permalinks/version'
 
 Gem::Specification.new do |gem|
-  gem.name          = 'mongoid-permalink'
-  gem.version       = Mongoid::Permalink::VERSION
+  gem.name          = 'mongoid-permalinks'
+  gem.version       = Mongoid::Permalinks::VERSION
   gem.authors       = 'Mario Uher'
   gem.email         = 'uher.mario@gmail.com'
-  gem.homepage      = 'https://github.com/haihappen/mongoid-permalink'
+  gem.homepage      = 'https://github.com/haihappen/mongoid-permalinks'
   gem.summary       = 'Permalinks for your Mongoid documents.'
   gem.description   = 'Mongoid::Permalink adds a permalink based on your document to_s method.'
 

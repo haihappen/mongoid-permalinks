@@ -1,6 +1,6 @@
 require File.expand_path('../spec_helper', __FILE__)
 
-describe Mongoid::Permalink do
+describe Mongoid::Permalinks do
   it 'adds permalink field' do
     Document.fields['permalink'].type.must_equal String
   end

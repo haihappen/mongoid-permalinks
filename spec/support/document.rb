@@ -1,6 +1,6 @@
 class Document
   include Mongoid::Document
-  include Mongoid::Permalink
+  include Mongoid::Permalinks
 
   field :name, type: String
 
@@ -9,7 +9,7 @@ end
 
 class Localized
   include Mongoid::Document
-  include Mongoid::Permalink
+  include Mongoid::Permalinks
 
   field :name,      type: String, localize: true
   field :permalink, type: String, localize: true
