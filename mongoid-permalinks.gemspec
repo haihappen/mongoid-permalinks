@@ -1,4 +1,5 @@
-require './lib/mongoid/permalinks/version'
+$: << File.expand_path('../lib', __FILE__)
+require 'mongoid/permalinks/version'
 
 Gem::Specification.new do |gem|
   gem.name          = 'mongoid-permalinks'

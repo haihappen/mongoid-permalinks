@@ -1,4 +1,4 @@
-require File.expand_path('../spec_helper', __FILE__)
+require_relative 'spec_helper'
 
 describe Mongoid::Permalinks do
   it 'adds permalink field' do
