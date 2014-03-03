@@ -16,9 +16,8 @@ gem 'mongoid-permalinks'
 class Document
   include Mongoid::Document
   include Mongoid::Permalinks
-  
+
   field :name, type: String
-  
   alias_method :to_s, :name
 end
 ```
@@ -40,7 +39,7 @@ document.permalink # => 'mongoid-permalinks-is-awesome'
 
 (The MIT license)
 
-Copyright (c) 2012 Mario Uher
+Copyright (c) 2012-2014 Mario Uher
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
