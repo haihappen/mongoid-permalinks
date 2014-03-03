@@ -2,9 +2,8 @@ $: << File.expand_path('../../lib', __FILE__)
 
 require 'minitest/autorun'
 require 'minitest/pride'
-require 'minitest/spec'
 
 require 'mongoid/permalinks'
 
 # Load support *.rb files in ./support
-Dir[File.expand_path('../support/*.rb', __FILE__)].each { |file| require_relative file }
+Mongoid.load!(File.expand_path('../mongoid.yml', __FILE__), 'test')
