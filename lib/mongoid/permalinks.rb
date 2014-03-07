@@ -13,7 +13,7 @@ module Mongoid
 
   private
     def set_permalink
-      self.permalink = (permalink.presence || to_s).parameterize
+      self.permalink = (permalink.presence || to_s).dasherize.parameterize
     end
   end
 end

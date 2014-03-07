@@ -41,6 +41,11 @@ class PermalinksTest < Minitest::Unit::TestCase
   end
 
 
+  def test_underscores_are_removed
+    assert_equal 'custom-permalink', Document.create(permalink: 'custom_permalink', name: 'Name').permalink
+  end
+
+
   def test_localized_permalink
     document = Localized.new
 

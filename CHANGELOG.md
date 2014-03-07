@@ -1,6 +1,7 @@
 # 1.0.0 (unreleased)
 
 * Fixes I18n deprecation warning.
+* Permalinks will be dasherized as of now.
 
 # 0.4.0 (March 3, 2014)
 
