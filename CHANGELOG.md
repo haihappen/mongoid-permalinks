@@ -1,3 +1,7 @@
+# 1.0.0 (unreleased)
+
+* Fixes I18n deprecation warning.
+
 # 0.4.0 (March 3, 2014)
 
 * Use Rake::FileList.

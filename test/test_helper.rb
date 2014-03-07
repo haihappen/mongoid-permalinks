@@ -5,5 +5,7 @@ require 'minitest/pride'
 
 require 'mongoid/permalinks'
 
-# Load support *.rb files in ./support
+I18n.available_locales = [:en, :de]
+I18n.enforce_available_locales = true
+
 Mongoid.load!(File.expand_path('../mongoid.yml', __FILE__), 'test')
